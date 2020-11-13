@@ -11,10 +11,11 @@ const calculateList = (words: string[], known: string[]): number => {
     ) + 2;
 
   const reversed = [...words].reverse();
-  const lastChecked = reversed.length;
-  reversed.findIndex((word, index) =>
-    [word, reversed[index + 1]].every((val) => known.includes(val)),
-  );
+  const lastChecked =
+    reversed.length -
+    reversed.findIndex((word, index) =>
+      [word, reversed[index + 1]].every((val) => known.includes(val)),
+    );
 
   return ((firstUnchecked + lastChecked) / 2) * 1000;
 };
