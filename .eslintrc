@@ -15,7 +15,12 @@
     "SharedArrayBuffer": "readonly"
   },
   "plugins": ["react", "react-hooks", "jsx-a11y", "prettier"],
-  "extends": ["plugin:react/recommended", "airbnb", "prettier/react"],
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "prettier",
+    "prettier/react"
+  ],
   "rules": {
     "prettier/prettier": "error",
     "import/prefer-default-export": "off",
@@ -54,7 +59,7 @@
         "@typescript-eslint/no-use-before-define": [1],
         "@typescript-eslint/quotes": [
           2,
-          "backtick",
+          "single",
           {
             "avoidEscape": true
           }
