@@ -99,7 +99,19 @@ const Vocabulary: React.FC<PageProps> = () => (
       <title>Vocabulary Calculator</title>
     </Helmet>
     <Heading mb={4}>Vocabulary Calculator</Heading>
-    <Text mb={3}>Select all words you know.</Text>
+    <Text mb={3} width={['100%', null, null, 850]}>
+      Select all words that you can read, know at least one meaning of, and have
+      encountered in native material.
+    </Text>
+    <Text mb={3} width={['100%', null, null, 850]}>
+      Adult natives score ~45,000 words on average. Please note that different
+      resources count &quot;words&quot; differently — plus, the best use of this
+      test is to track your own progress over time, not to compare yourself to
+      other people. Do not select English-derived words unless you have actually
+      encountered them in Japanese, otherwise your score may be significantly
+      thrown off.
+    </Text>
+
     <InputHandler wordlists={words} />
   </Layout>
 );
